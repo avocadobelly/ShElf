@@ -3,7 +3,7 @@ This project handles the client side functionality of the ShElf shopping list ap
 This project was set up using Create React App
 It utilises the capabilities of the Tailwind CSS framework and Typescript
 
-## Available Scripts
+## Info on running React application - Available Scripts
 
 In the project directory, you can run:
 
