@@ -1,3 +1,4 @@
+/*Typescript entry point to aplication, do not remove!*/
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
