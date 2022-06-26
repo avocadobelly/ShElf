@@ -1,6 +1,7 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Client
+This project handles the client side functionality of the ShElf shopping list application.
+This project was set up using Create React App
+It utilises the capabilities of the Tailwind CSS framework and Typescript
 
 ## Available Scripts
 
