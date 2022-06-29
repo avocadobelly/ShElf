@@ -11,6 +11,19 @@ app.use(cors({
     origin: 'http://localhost:3000'
 })); // add origin to this function to allow those apps to communicate
 
+const testData = [
+    {
+        "id": "1",
+        "item": "testItem",
+        "done": "true"
+    },
+];
+
+app.get("/", function(req, res){
+    res.send("HELLO WORLD");
+    });
+  
+
 app.listen(API_PORT, () => {
     console.log('Listening on port: ' + API_PORT);
 })

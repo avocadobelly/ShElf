@@ -2,9 +2,9 @@
   "name": "api",
   "version": "1.0.0",
   "description": "",
-  "main": "app.tsx",
+  "main": "src/app.tsx",
   "scripts": {
-    "start": "node app.tsx",
+    "start": "node src/app.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
