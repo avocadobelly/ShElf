@@ -1,8 +1,8 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/app.tsx",
+  "description": "Backend api for a shopping list application",
+  "main": "src/app.ts",
   "scripts": {
     "build": "tsc",
     "start": "concurrently \"tsc --watch\" \"nodemon dist/js/app.js",

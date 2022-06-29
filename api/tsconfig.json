@@ -1,4 +1,4 @@
-// Defines compile preferences for Typescript
+/*Defines compile preferences for Typescript*/
 {
     "compilerOptions": {
         "target": "es6",
@@ -10,5 +10,5 @@
         "forceConsistentCasingInFileNames": true
       },
       "include": ["src/**/*"],
-      "exclude": ["src/types/*.js", "node_modules", ".vscode"]
+      "exclude": ["src/types/*.ts", "node_modules", ".vscode"]
 }
