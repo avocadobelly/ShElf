@@ -2,8 +2,9 @@
 This project handles the client side functionality of the ShElf shopping list application.
 This project was set up using Create React App
 It utilises the capabilities of the Tailwind CSS framework and Typescript
+It uses the Axios library to manage HTTP requests
 
-## Available Scripts
+## Info on running React application - Available Scripts
 
 In the project directory, you can run:
 
