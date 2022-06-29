@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/app.tsx",
   "scripts": {
-    "start": "node src/app.tsx",
+    "build": "tsc",
+    "start": "concurrently \"tsc --watch\" \"nodemon dist/js/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
