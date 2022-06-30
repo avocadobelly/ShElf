@@ -19,12 +19,7 @@ app.use(router);
 
 // Connnecting to DB
 const uri: string =
-`
-mongodb+srv://
-${process.env.MONGODB_USERNAME}:
-${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_CLUSTER}
-${process.env.MONGODB_DATABASE}?retryWrites=true&w=majority
-`;
+`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@clustergcb.gq6neu4.mongodb.net/?retryWrites=true&w=majority`
 
 mongoose
 .connect(uri)
