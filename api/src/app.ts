@@ -1,33 +1,38 @@
 /**
  * This is the backend Node server for the ShElf Shopping list application
  */
-import express, {Express} from 'express';
+import express, { Express } from 'express';
 import mongoose from 'mongoose';
 import cors from "cors";
+import router from "./routes";
 
-const PORT : string | number = process.env.PORT || 4000;
+
 const app : Express = express();
 
-// CORS enables access to a resource from a different origin (i.e: the client)
-// When the client frontend requests a resource, the response will additionally contain a stamp that tells your browser to allow resource sharing across different origins.
+const PORT : string | number = process.env.PORT || 4000;
+
+// allow cross origin requests from the client frontend of this project hosted on port 3000
 app.use(cors({
     origin: 'http://localhost:3000'
 })); // add origin to this function to allow those apps to communicate
+app.use(router);
 
-// Database uri
+// Connnecting to DB
 const uri: string =
 `
 mongodb+srv://
 ${process.env.MONGODB_USERNAME}:
-${process.env.MONGODB_PASSWORD}@clustergcb.gq6neu4.mongodb.net/
+${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_CLUSTER}
 ${process.env.MONGODB_DATABASE}?retryWrites=true&w=majority
 `;
 
-app.get("/", function(req, res){
-    res.send("Testing 123");
-    });
-  
-
-app.listen(PORT, () => {
-    console.log('Listening on port: ' + PORT);
-})
+mongoose
+.connect(uri)
+.then(() =>
+    app.listen(PORT, () =>
+        console.log(`Node server running on port http://localhost:${PORT}`)
+    )
+)
+.catch(e => {
+    throw e;
+});
