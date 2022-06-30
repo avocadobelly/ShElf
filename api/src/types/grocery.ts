@@ -1,6 +1,6 @@
 import {Document} from "mongoose";
 
-export interface IShoppingItem extends Document {
+export interface IGrocery extends Document {
     name: string
     bought: boolean
 };

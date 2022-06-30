@@ -1,7 +1,7 @@
-import {IShoppingItem} from "./../types/shoppingItem";
+import {IGrocery} from "../types/grocery";
 import {model, Schema} from "mongoose";
 
-const shoppingItemSchema: Schema = new Schema(
+const grocerySchema: Schema = new Schema(
     {
         name: {
             type: String,
@@ -15,5 +15,5 @@ const shoppingItemSchema: Schema = new Schema(
     { timestamps: true }
 )
 
-export default model<IShoppingItem>("ShoppingItem", shoppingItemSchema);
+export default model<IGrocery>("Grocery", grocerySchema);
 
