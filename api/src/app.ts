@@ -1,4 +1,6 @@
-/*This is the backend Node server for the ShElf Shopping list application*/
+/**
+ * This is the backend Node server for the ShElf Shopping list application
+ */
 import express, {Express} from 'express';
 import mongoose from 'mongoose';
 import cors from "cors";
@@ -22,7 +24,7 @@ ${process.env.MONGODB_DATABASE}?retryWrites=true&w=majority
 `;
 
 app.get("/", function(req, res){
-    res.send("HELLO WORLD");
+    res.send("Testing 123");
     });
   
 

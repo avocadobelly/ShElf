@@ -1,6 +1,5 @@
-import mongoose from "mongoose";
 import {IShoppingItem} from "./../types/shoppingItem";
-import {model, Schema} from "mongoose"
+import {model, Schema} from "mongoose";
 
 const shoppingItemSchema: Schema = new Schema(
     {
@@ -11,8 +10,9 @@ const shoppingItemSchema: Schema = new Schema(
         bought: {
             type: Boolean,
             required: false, // leaving as false for now, will update with later stories
-        }
+        },
     },
+    { timestamps: true }
 )
 
 export default model<IShoppingItem>("ShoppingItem", shoppingItemSchema);
