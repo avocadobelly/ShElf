@@ -2,8 +2,6 @@
     "env": {
         "PORT": "4000",
         "MONGODB_USERNAME": "avocadobelly",
-        "MONGODB_PASSWORD": " ",
-        "MONGODB_CLUSTER": "clustergcb.gq6neu4.mongodb.net/",
-        "MONGODB_DATABASE": " "
+        "MONGODB_PASSWORD": "fojvY0-nyqsuv-zazcic"
     }
 }
