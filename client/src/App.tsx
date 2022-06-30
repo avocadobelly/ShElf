@@ -25,23 +25,13 @@ function App() {
       ];
 
     const [groceries, setGroceries] = useState(exampleGroceries);
-    // const [grocery, setGrocery] = useState("");
-
-
-    // useEffect(() => {
-    //     const fetchGroceryAndSetGroceries = async () => {
-    //         const groceries = await API.getAllGroceries();
-    //         setGroceries(groceries);
-    //     }
-    //     fetchGroceryAndSetGroceries();
-    // }, [])
 
   return (
-    <div className="App grid grid-cols-5 grid-rows-6'">
-        <main className='col-span-full row-span-full'>
-            <div className='col-start-2 col-span-3 gap-4 grid-rows-1 row-span-2'>
-                <h1 className='text-center text-8xl font-bold text-green-500'>ShElf</h1>
-                <h2 className='text-center text-6xl font-semibold text-green-800'>Grocery List</h2>
+    <div className="App grid grid-cols-5 grid-rows-6 w-screen'">
+        <main className='col-span-full row-span-full mt-12 lg:mt-32 mx-auto'>
+            <div className='col-start-2 col-span-3 gap-4 grid-rows-1 row-span-3 py-20'>
+                <h1 className='text-center text-lg font-bold text-green-500'>ShElf</h1>
+                <h2 className='text-center text-base font-semibold text-green-800'>Grocery List</h2>
             </div>
             <div className='groceries flex justify-center col-start-2 col-span-3 gap-4 grid-rows-3 row-span-4'>
                 <ul className=''>
