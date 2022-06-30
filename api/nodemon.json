@@ -1,0 +1,7 @@
+{
+    "env": {
+        "PORT": "4000",
+        "MONGODB_USERNAME": "avocadobelly",
+        "MONGODB_PASSWORD": "fojvY0-nyqsuv-zazcic"
+    }
+}
